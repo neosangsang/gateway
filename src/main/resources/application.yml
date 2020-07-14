@@ -12,15 +12,15 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/orders/**,/orderStates/**
-        - id: Delivery
+        - id: teamc-delivery
           uri: http://localhost:8082
           predicates:
             - Path=/deliveries/** 
-        - id: Check
+        - id: teamc-check
           uri: http://localhost:8083
           predicates:
             - Path=/checks/** 
-        - id: Product
+        - id: teamc-product
           uri: http://localhost:8084
           predicates:
             - Path=/products/** 
@@ -28,7 +28,7 @@ spring:
           uri: http://localhost:8085
           predicates:
             - Path=/payments/** 
-        - id: Notify
+        - id: teamc-notify
           uri: http://localhost:8086
           predicates:
             - Path= 
