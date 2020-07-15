@@ -56,15 +56,15 @@ spring:
           predicates:
             - Path=/orders/**,/orderStates/**
         - id: Delivery
-          uri: http://Delivery:8080
+          uri: http://teamc-delivery:8080
           predicates:
             - Path=/deliveries/** 
         - id: Check
-          uri: http://Check:8080
+          uri: http://teamc-check:8080
           predicates:
             - Path=/checks/** 
         - id: Product
-          uri: http://Product:8080
+          uri: http://teamc-product:8080
           predicates:
             - Path=/products/** 
         - id: Payment
@@ -72,7 +72,7 @@ spring:
           predicates:
             - Path=/payments/** 
         - id: Notify
-          uri: http://Notify:8080
+          uri: http://teamc-notify:8080
           predicates:
             - Path= 
       globalcors:
