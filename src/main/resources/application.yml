@@ -52,27 +52,27 @@ spring:
     gateway:
       routes:
         - id: Order
-          uri: http://Order:8080
+          uri: http://admin-sk-order:8080
           predicates:
             - Path=/orders/**,/orderStates/**
         - id: Delivery
-          uri: http://teamc-delivery:8080
+          uri: http://admin-sk-delivery:8080
           predicates:
             - Path=/deliveries/** 
         - id: Check
-          uri: http://teamc-check:8080
+          uri: http://admin-sk-check:8080
           predicates:
             - Path=/checks/** 
         - id: Product
-          uri: http://teamc-product:8080
+          uri: http://admin-sk-product:8080
           predicates:
             - Path=/products/** 
         - id: Payment
-          uri: http://Payment:8080
+          uri: http://admin-sk-payment:8080
           predicates:
             - Path=/payments/** 
         - id: Notify
-          uri: http://teamc-notify:8080
+          uri: http://admin-sk-notify:8080
           predicates:
             - Path= 
       globalcors:
