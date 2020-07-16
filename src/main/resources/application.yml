@@ -32,6 +32,10 @@ spring:
           uri: http://localhost:8086
           predicates:
             - Path= 
+        - id: teamc-assign
+          uri: http://localhost:8087
+          predicates:
+            - Path=             
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -75,6 +79,10 @@ spring:
           uri: http://admin06-sk-notify:8080
           predicates:
             - Path= 
+        - id: Assign
+          uri: http://admin06-sk-assign:8080
+          predicates:
+            - Path=/assigns/**             
       globalcors:
         corsConfigurations:
           '[/**]':
