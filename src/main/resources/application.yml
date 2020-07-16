@@ -82,7 +82,11 @@ spring:
         - id: Assign
           uri: http://admin06-sk-assign:8080
           predicates:
-            - Path=/assigns/**             
+            - Path=/assigns/**       
+        - id: User
+          uri: http://admin06-sk-user:8080
+          predicates:
+            - Path=/users/**                 
       globalcors:
         corsConfigurations:
           '[/**]':
